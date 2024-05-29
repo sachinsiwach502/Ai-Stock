@@ -26,6 +26,7 @@
     --black-color: #000000;
     --white-color: #ffff;
     --primary-color: #0F1418;
+    --light-black-color: #010406;
 
 
     --fs-10: 10px;
@@ -318,8 +319,15 @@
     color: var(--white-color);
 }
 
+.curser {
+    cursor: pointer;
+}
 
-/* navbar ===========================*/
+.bg-color {
+    background-color: var(--light-black-color);
+}
+
+/* header ===========================*/
 .container_1140 {
     max-width: 1140px;
     padding-left: 12px;
@@ -339,6 +347,14 @@
     border-radius: 4px;
 }
 
+.max_965 {
+    max-width: 965px;
+}
+
+.max-w-665 {
+    max-width: 665px;
+}
+
 .nav_bg_color {
     background: var(--primary-color);
 }
@@ -351,13 +367,73 @@
     padding-bottom: 13px;
 }
 
+.header-bg_img {
+    background-image: url("../img/png/hero_section_bg_img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pt_28 {
+    padding-top: 28px;
+}
+
+.pt_39 {
+    padding-top: 39px;
+}
+
+.height-60 {
+    height: 60px;
+}
+
+.heading_gradient {
+    background: linear-gradient(177.45deg, #00FFE1 71.78%, #6E5DF6 95.3%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about_card {
+    padding: 20px 20px 23px 20px;
+    position: relative;
+    backdrop-filter: blur(20px);
+}
+
+.about_card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 8px;
+    padding: 2px;
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
 
 
+/*======================== slider =======================*/
+.slider_itm {
+    padding: 20px 72px 20px 20px;
+    width: 376px !important;
+}
 
+.slider_gradient {
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
+.slick-slider {
+    margin: 0 -15px;
+}
 
-
-
+.slick-slide {
+    padding: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
 
 
 @media (min-width:768px) {
@@ -367,5 +443,23 @@
 
     .lh-md-64 {
         line-height: var(--lh-64);
+    }
+
+    .fs-md-52 {
+        font-size: var(--fs-52);
+    }
+
+    .lh-md-64 {
+        line-height: var(--lh-64);
+    }
+}
+
+@media (min-width:992px) {
+    .max_lg_w_628 {
+        max-width: 628px;
+    }
+
+    .min_lg_h_354 {
+        min-height: 354px;
     }
 }

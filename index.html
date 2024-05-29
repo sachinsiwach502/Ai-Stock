@@ -7,31 +7,167 @@
     <title>AI Stocks</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
-    <header>
+<body class="bg-color">
+    <header class="header-bg_img min-vh-100 d-flex flex-column">
         <nav class="nav_bg_color position-relative">
             <div class="position-absolute bottom-0 nav_layer">
                 <img src="./assets/img/png/nav_bg_img.png" alt="layer" class="w-100">
             </div>
             <div class="container_1140 pt_12 pb_13">
                 <div class="d-flex justify-content-between">
-                    <h1 class="ff-open fs-md-48 lh-md-64 fs-36 lh-45 fw-bold text-white">AI STOCKS</h1>
-                    <button class="nav_btn dd-open fs-16 lh-24 fw-normal">Sign Up</button>
+                    <h1 class="ff-open fs-md-48 lh-md-64 fs-36 lh-45 fw-bold text-white curser position-relative z-2">AI
+                        STOCKS</h1>
+                    <button class="nav_btn ff-open fs-16 lh-24 fw-bold position-relative z-2">Sign Up</button>
                 </div>
             </div>
 
         </nav>
+
+        <!--================ hero section ======================-->
+        <section class="d-flex flex-column flex-grow-1 align-items-center justify-content-center">
+            <div class="container_1140 ">
+                <div class="d-flex align-items-center justify-content-center flex-column">
+                    <h1 class="text-center max_965 fw-bold ff-open fs-md-52 lh-md-64 fs-40 lh-49 text-white mb-0">Dive
+                        into the
+                        Explosive
+                        Momentum of 2024 with the <span class="heading_gradient">Top 7</span> Fastest-Growing <span
+                            class="heading_gradient">AI Stocks!</span>
+                    </h1>
+
+                    <p class="mb-0 text-white-50 fw-normal max-w-665 text-center pt_28">Major AI Stocks such as
+                        Microsoft
+                        and Nvidia have surged
+                        over
+                        <span class="fw-bold">80%</span>
+                        in the past year. This giants are expected to grow
+                        <span class="fw-bold">130.66%</span> in 2024
+                    </p>
+                </div>
+                <div class="row justify-content-between pt_39 align-items-center">
+                    <div class="col-lg-7">
+                        <span class="max_lg_w_628 min_lg_h_354 pb-1"> <img src="./assets/img/png/live_video.png"
+                                alt="video" class="w-100"></span>
+                        <h4 class="ff-open fw-bold lh-26 text-center fs-18 text-white pt-3 mb-0">Due to extremely high
+                            demand
+                            for
+                            media coverage, registration closes in</h4>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="about_card">
+                            <h1 class=" text-center text-white fw-semibold mb-0 pb-3">This Is The Right Time to Invest
+                                In AI
+                                Stocks
+                            </h1>
+                            <p class="mb-0 ff-open text-center text-white fw-normal lh-24 pb-4">In a matter of minutes,
+                                one
+                                of our AI mentors
+                                will contact you, No Experience Required!</p>
+                            <input type="text" placeholder="First Name"
+                                class="pt-3 pb-3 ps-3 ff-open fw-normal fs-16 lh-24 w-100 position-relative z-3">
+                            <input type="text" placeholder="Last Name"
+                                class="pt-3 pb-3 ps-3 ff-open fw-normal fs-16 lh-24 w-100 mt-3 position-relative z-3">
+                            <input type="email" placeholder="Email"
+                                class="pt-3 pb-3 ps-3 ff-open fw-normal fs-16 lh-24 w-100 mt-3 position-relative z-3">
+                            <div class="d-flex align-items-center mt-3">
+                                <select class="ps-3 height-60 position-relative z-3">
+                                    <option value="+91" class="fw-normal fs-16 lh-24 ff-open  ">+91
+                                    </option>
+                                    <option value="+1" class="fw-normal fs-16 lh-24 ff-open  ">+1
+                                    </option>
+                                </select>
+                                <input type="number" placeholder="Phone Number"
+                                    class="pt-3 pb-3 ps-3 ff-open fw-normal fs-16 lh-24 w-100 position-relative z-3">
+                            </div>
+                            <button class="nav_btn w-100  position-relative z-2 ff-open fs-16 lh-24 fw-bold mt-4">Get
+                                Started</button>
+                        </div>
+                        <p class="fw-bold ff-open text-white fs-20 lh-28 text-center pt-3 mb-0">Only 3 Spots Left</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
     <main>
-
+        <!--==================== slider ==================-->
+        <div class="container-fluid overflow-hidden pt-5">
+            <div class="slick_slider">
+                <div class="slider_itm">
+                    <div class="d-flex align-items-center gap-3">
+                        <img src="./assets/img/png/slider_img_1.png" alt="random img">
+                        <span>
+                            <h1 class="ff-open fw-bold fs-20 lh-28 text-white mb-0">Brent</h1>
+                            <p class="ff-open fw-normal fs-16 lh-24 text-white pt-2 mb-0">Profit: <span
+                                    class="slider_gradient">$32,911</span></p>
+                            <p class="ff-open fw-normal fs-16 lh-24 text-white mb-0">Current Balance: $55,780</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="slider_itm">
+                    <div class="d-flex align-items-center gap-3">
+                        <img src="./assets/img/png/slider_img.png" alt="random img">
+                        <span>
+                            <h1 class="ff-open fw-bold fs-20 lh-28 text-white mb-0">Ana</h1>
+                            <p class="ff-open fw-normal fs-16 lh-24 text-white pt-2 mb-0">Profit: <span
+                                    class="slider_gradient">$4,760</span></p>
+                            <p class="ff-open fw-normal fs-16 lh-24 text-white mb-0">Current Balance: $7,414</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="slider_itm">
+                    <div class="d-flex align-items-center gap-3">
+                        <img src="./assets/img/png/slider_img_3.png" alt="random img">
+                        <span>
+                            <h1 class="ff-open fw-bold fs-20 lh-28 text-white mb-0">Ray</h1>
+                            <p class="ff-open fw-normal fs-16 lh-24 text-white pt-2 mb-0">Profit: <span
+                                    class="slider_gradient">$4,490</span></p>
+                            <p class="ff-open fw-normal fs-16 lh-24 text-white mb-0">Current Balance: $9,840</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="slider_itm">
+                    <div class="d-flex align-items-center gap-3">
+                        <img src="./assets/img/png/slider_img_4.png" alt="random img">
+                        <span>
+                            <h1 class="ff-open fw-bold fs-20 lh-28 text-white mb-0">Brian</h1>
+                            <p class="ff-open fw-normal fs-16 lh-24 text-white pt-2 mb-0">Profit: <span
+                                    class="slider_gradient">$62,233</span></p>
+                            <p class="ff-open fw-normal fs-16 lh-24 text-white mb-0 text-nowrap">Current Balance:
+                                $105,080</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="slider_itm">
+                    <div class="d-flex align-items-center gap-3">
+                        <img src="./assets/img/png/slider_img.png" alt="random img">
+                        <span>
+                            <h1 class="ff-open fw-bold fs-20 lh-28 text-white mb-0">Ana</h1>
+                            <p class="ff-open fw-normal fs-16 lh-24 text-white pt-2 mb-0">Profit: <span
+                                    class="slider_gradient">$32,911</span></p>
+                            <p class="ff-open fw-normal fs-16 lh-24 text-white mb-0">Current Balance: $55,780</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
 
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
