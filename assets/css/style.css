@@ -436,6 +436,47 @@
 }
 
 
+/*======================== understang ==============================*/
+.grident_box {
+    padding-right: 25px;
+    padding-left: 50px;
+    padding-top: 25px;
+    min-height: 268px;
+    border-radius: 15px;
+    background: linear-gradient(82.41deg, #00FFE1 -12.77%, #6E5DF6 93.08%);
+}
+
+.max-w-360 {
+    max-width: 360px;
+}
+
+.stocks_card {
+    border: 1px solid #0000001A;
+    background-color: var(--white-color);
+    border-radius: 15px;
+    max-width: 471px;
+    padding: 20px;
+    transform: translate(40px, -81px);
+}
+
+.stock_card_heading {
+    background: linear-gradient(82.75deg, #00FFE1 -11.09%, #6E5DF6 55.46%),
+        linear-gradient(180deg, #9B77E8 0%, #6854FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stock_potential {
+    box-shadow: 0px 0px 11.1px 0px #0000001A;
+    border-radius: 10px;
+    width: 100%;
+    padding: 8px 83px 8px 8px;
+}
+
+.color_green {
+    color: #15AA15;
+}
+
 @media (min-width:768px) {
     .fs-md-48 {
         font-size: var(--fs-48);
@@ -461,5 +502,19 @@
 
     .min_lg_h_354 {
         min-height: 354px;
+    }
+
+    .pt_lg_200 {
+        padding-top: 200px !important;
+    }
+
+    .mt_lg_60 {
+        margin-top: 60px;
+    }
+}
+
+@media (min-width:576px) {
+    .pt_sm_100 {
+        padding-top: 100px !important;
     }
 }
