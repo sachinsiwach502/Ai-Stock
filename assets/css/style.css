@@ -518,6 +518,16 @@
     mask-composite: exclude;
 }
 
+/*================= faq section =====================*/
+.faq_container {
+    max-width: 716px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 /*==================== benefit section ===============*/
 .max_733 {
     max-width: 733px;
@@ -554,6 +564,72 @@
 
 .max-w-974 {
     max-width: 974px;
+}
+
+/*====================== first step section  =======================*/
+.max-w-575 {
+    max-width: 575px;
+}
+
+.max-w-530 {
+    max-width: 530px;
+}
+
+.gradient_border {
+    position: relative;
+    padding: 24px;
+}
+
+.gradient_border::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 8px;
+    padding: 2px;
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.input_txt::placeholder {
+    font-family: var(--ff-open);
+    font-style: var(--fs-16);
+    line-height: var(--lh-24);
+    font-weight: 400;
+}
+
+.input_txt {
+    background-color: var(--black-color);
+    border: 1px solid #FFFFFFB2;
+    border-radius: 4px;
+    color: #FFFFFFB2;
+}
+
+/*================ footer =======================*/
+.max-w-261 {
+    max-width: 261px;
+}
+
+.footer_underline {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(107.02deg, #00FFE1 12.76%, #6E5DF6 91.81%);
+    margin-top: 54px;
+}
+
+
+/*================== faq sction ==================*/
+.acc_hidden_txt {
+    display: none;
+}
+
+.acc_itm {
+    border-bottom: 0.5px solid;
+    border-image-source: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
+    border-image-slice: 1;
 }
 
 @media (min-width:576px) {
@@ -609,6 +685,10 @@
         max-width: 628px;
     }
 
+    .pt_lg_40 {
+        padding-top: 40px !important;
+    }
+
     .min_lg_h_354 {
         min-height: 354px;
     }
@@ -651,5 +731,13 @@
 
     .pt_lg_100 {
         padding-top: 100px !important;
+    }
+
+    .pt_lg_60 {
+        padding-top: 60px !important;
+    }
+
+    .pb_lg_60 {
+        padding-bottom: 60px !important;
     }
 }

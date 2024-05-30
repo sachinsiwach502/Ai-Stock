@@ -33,8 +33,37 @@ $('.slick_slider').slick({
                 slidesToScroll: 1
             }
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
     ]
+});
+
+let hdnTxt = document.querySelector(".acc_hidden_txt").style.display = "block";
+let arrow = document.querySelector(".acc_arrow").style.transform = "rotate(180deg)";
+
+let accItm = document.querySelectorAll(".acc_itm");
+accItm.forEach(e => {
+    let clickPart = e.querySelector(".acc_click_head");
+    let accArrow = e.querySelector(".acc_arrow");
+    let hiddenTxt = e.querySelector(".acc_hidden_txt");
+
+    clickPart.addEventListener("click", () => {
+        // Hide all other items
+        accItm.forEach(j => {
+            if (j !== e) {
+                let otherHiddenTxt = j.querySelector(".acc_hidden_txt");
+                let otherAccArrow = j.querySelector(".acc_arrow");
+                otherHiddenTxt.style.display = "none";
+                otherAccArrow.style.transform = "rotate(0deg)";
+            }
+        });
+
+        // Toggle the current item
+        let txtStyle = window.getComputedStyle(hiddenTxt).display;
+        if (txtStyle === "none") {
+            hiddenTxt.style.display = "block";
+            accArrow.style.transform = "rotate(180deg)";
+        } else {
+            hiddenTxt.style.display = "none";
+            accArrow.style.transform = "rotate(0deg)";
+        }
+    });
 });
