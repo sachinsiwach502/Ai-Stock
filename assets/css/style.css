@@ -489,7 +489,33 @@
     margin-top: 40px;
 }
 
+/*================== statistics for today ====================*/
+.number_card {
+    max-width: 362px;
+    padding: 34px 46px 50px 46px;
+}
 
+.gradinet_cirle {
+    position: relative;
+    border-radius: 50%;
+    width: 270px;
+    height: 270px;
+}
+
+
+.gradinet_cirle::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    padding: 8px;
+    background: linear-gradient(171.68deg, #00FFE1 39.97%, #6E5DF6 107.69%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
 
 @media (min-width:576px) {
     .pt_sm_100 {
@@ -504,6 +530,9 @@
         margin-top: 55px !important;
     }
 
+    .pt_sm_75 {
+        padding-top: 75px !important;
+    }
 }
 
 @media (min-width:768px) {
@@ -551,5 +580,9 @@
 
     .mt_lg_80 {
         margin-top: 80px !important;
+    }
+
+    .pt_lg_150 {
+        padding-top: 150px !important;
     }
 }
