@@ -437,6 +437,8 @@
     margin-left: 15px;
 }
 
+/*==================== trade log ==================*/
+
 
 /*======================== understang ==============================*/
 .grident_box {
@@ -489,6 +491,16 @@
 .mt_40 {
     margin-top: 40px;
 }
+
+/*=================== how it woks ===================*/
+.container_891 {
+    max-width: 891px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /*================== statistics for today ====================*/
 .number_card {
@@ -632,6 +644,9 @@
     border-image-slice: 1;
 }
 
+
+
+
 @media (min-width:576px) {
     .pt_sm_100 {
         padding-top: 100px !important;
@@ -683,6 +698,10 @@
 @media (min-width:992px) {
     .max_lg_w_628 {
         max-width: 628px;
+    }
+
+    .max-w-542 {
+        max-width: 542px;
     }
 
     .pt_lg_40 {
@@ -739,5 +758,9 @@
 
     .pb_lg_60 {
         padding-bottom: 60px !important;
+    }
+
+    .max-w-558 {
+        max-width: 558px;
     }
 }
